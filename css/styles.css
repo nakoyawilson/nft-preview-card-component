@@ -36,14 +36,17 @@ p {
   align-items: center;
 }
 
+/* Card */
 .main-card {
   background-color: var(--bg-card);
   width: 100%;
   max-width: 26rem;
   border-radius: 15px;
   padding: 2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0,0, .5);
 }
 
+/* Main Image */
 .image-container {
   position: relative;
   width: 100%;
@@ -55,7 +58,6 @@ p {
   width: 350px;
   height: auto;
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .overlay {
@@ -74,6 +76,7 @@ p {
 
 .image-container:hover .overlay {
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .view {
@@ -81,10 +84,12 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* -ms-transform: translate(-50%, -50%); */
+  -ms-transform: translate(-50%, -50%);
   text-align: center;
+  display: none;
 }
 
+/* Main Content */
 .title {
   color: var(--colour-white);
   margin: 1rem 0;
@@ -106,6 +111,16 @@ p {
   font-weight: 600;
 }
 
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+/* Creator Info */
 .creator-info {
   display: flex;
   border-top: 2px solid var(--line-colour);

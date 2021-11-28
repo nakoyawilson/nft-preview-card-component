@@ -1,8 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  --bg-main: hsl(217, 54%, 11%);
+  --bg-card: hsl(216, 50%, 16%);
+  --colour-blue: hsl(215, 51%, 70%);
+  --colour-cyan: hsl(178, 100%, 50%);
+  --colour-white: hsl(0, 0%, 100%);
+  --line-colour: hsl(215, 32%, 27%);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Project Styles */
+body {
+  background-color: var(--bg-main);
+  font-family: 'Outfit', sans-serif;
+  color:var(--colour-blue);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 18px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-card {
+  background-color: var(--bg-card);
+  width: 100%;
+  max-width: 26rem;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.main-image {
+  display: block;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--colour-cyan);
+  border-radius: 10px;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+.title {
+  color: var(--colour-white);
+  margin: 1rem 0;
+}
+
+.description {
+  width: 20rem;
+  margin-bottom: 1rem;
+}
+
+.eth-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.eth {
+  color: var(--colour-cyan);
+  font-weight: 600;
+}
+
+.creator-info {
+  display: flex;
+  border-top: 2px solid var(--line-colour);
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.avatar {
+  border: 2px solid var(--colour-white);
+  border-radius: 50%;
+  width: 40px;
+  height: auto;
+  margin-right: 1.25rem;
+}
+
+.creator-text {
+  font-weight: 400;
+}
+
+.creator-name {
+  color: var(--colour-white);
+}
+
+.title:hover,
+.creator-name:hover {
+  color: var(--colour-cyan);
+  cursor: pointer;
+}
+
+/* Footer Section */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--colour-white);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--colour-cyan);
 }

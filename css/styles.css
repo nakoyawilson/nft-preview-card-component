@@ -26,7 +26,7 @@ body {
 }
 
 p {
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 .container {
@@ -40,22 +40,23 @@ p {
 .main-card {
   background-color: var(--bg-card);
   width: 100%;
-  max-width: 26rem;
+  max-width: 340px;
   border-radius: 15px;
-  padding: 2rem;
+  padding: 1.2rem;  
   box-shadow: 0 1rem 3rem rgba(0, 0,0, .5);
 }
 
 /* Main Image */
 .image-container {
   position: relative;
+  margin: 0 auto;
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .main-image {
   display: block;
-  width: 350px;
+  width: 300px;
   height: auto;
   border-radius: 10px;
 }
@@ -74,19 +75,17 @@ p {
   border-radius: 10px;
 }
 
-.image-container:hover .overlay {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
 .view {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   text-align: center;
-  display: none;
+}
+
+.image-container:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 /* Main Content */
@@ -96,7 +95,6 @@ p {
 }
 
 .description {
-  width: 20rem;
   margin-bottom: 1rem;
 }
 
@@ -129,7 +127,7 @@ p {
 }
 
 .avatar {
-  border: 2px solid var(--colour-white);
+  border: 1px solid var(--colour-white);
   border-radius: 50%;
   width: 40px;
   height: auto;

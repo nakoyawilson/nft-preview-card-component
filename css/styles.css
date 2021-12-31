@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
 :root {
   --bg-main: hsl(217, 54%, 11%);
@@ -19,8 +19,8 @@
 /* Project Styles */
 body {
   background-color: var(--bg-main);
-  font-family: 'Outfit', sans-serif;
-  color:var(--colour-blue);
+  font-family: "Outfit", sans-serif;
+  color: var(--colour-blue);
   font-weight: 300;
   line-height: 1.6;
 }
@@ -35,11 +35,10 @@ body {
 /* Card */
 .main-card {
   background-color: var(--bg-card);
-  width: 100%;
-  max-width: 340px;
+  width: min(90%, 340px);
   border-radius: 15px;
-  padding: 1.2rem;  
-  box-shadow: 0 1rem 3rem rgba(0, 0,0, .5);
+  padding: 1.2rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
 }
 
 /* Main Image */
@@ -52,7 +51,8 @@ body {
 
 .main-image {
   display: block;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -161,4 +161,11 @@ body {
 
 .attribution a:hover {
   color: var(--colour-cyan);
+}
+
+/* Media Queries */
+@media screen and (max-width: 300px) {
+  .eth-info {
+    flex-direction: column;
+  }
 }

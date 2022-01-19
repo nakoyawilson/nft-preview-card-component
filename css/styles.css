@@ -25,19 +25,20 @@ body {
   line-height: 1.6;
 }
 
-.container {
+/* .container {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Card */
 .main-card {
   background-color: var(--bg-card);
-  width: min(90%, 340px);
+  width: min(87.5%, 22rem);
+  margin: 9.5rem auto;
   border-radius: 15px;
-  padding: 1.2rem;
+  padding: 1.5rem 1.6rem 2rem;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
 }
 
@@ -91,17 +92,22 @@ body {
 /* Main Content */
 .title {
   color: var(--colour-white);
-  margin: 1rem 0;
+  margin: 1.4rem 0 0.75rem;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .description {
+  font-size: 1.1rem;
+  letter-spacing: 0.015em;
   margin-bottom: 1rem;
+  font-weight: 300;
 }
 
 .eth-info {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
+  margin: 1rem 0 1.4rem;
 }
 
 .eth {
@@ -121,7 +127,7 @@ body {
 /* Creator Info */
 .creator-info {
   display: flex;
-  border-top: 2px solid var(--line-colour);
+  border-top: 1px solid var(--line-colour);
   padding-top: 1rem;
   align-items: center;
 }
@@ -129,13 +135,13 @@ body {
 .avatar {
   border: 1px solid var(--colour-white);
   border-radius: 50%;
-  width: 40px;
+  width: 2rem;
   height: auto;
-  margin-right: 1.25rem;
+  margin-right: 1rem;
 }
 
 .creator-text {
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .creator-name {
